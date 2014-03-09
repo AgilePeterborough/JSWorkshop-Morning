@@ -1,0 +1,33 @@
+{
+  "name": "Meerkovo-monitor",
+  "version": "0.0.1",
+  "author": "Agile Peterborough",
+  "description": "You have always wanted to know what is going on in Meerkovo have't you. Well here is your chance and in the proccess learn a bit of javascript along the way. Work through the examples given to you and you should be on your way",
+  "contributors": [ 
+    {
+      "name": "Michael Watson",
+      "email": "mikecool36@gmail.com"
+    }, 
+    {
+      "name": "David Boyne",
+      "email": ""
+    }, 
+    {
+      "name": "Alex Shaw",
+      "email": ""
+    } 
+  ],
+  "keywords": [
+    "agile",
+    "peterborough",
+    "meerkovo",
+    "javascript"
+  ],
+  "dependencies" : {
+    "express"   :  "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
