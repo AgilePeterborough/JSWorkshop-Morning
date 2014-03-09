@@ -1,4 +1,4 @@
-function createRandomNumber(low, high)
+function createPseudoRandomNumber(low, high)
 {
     return Math.random() * (high -low)+low;
 }
@@ -6,11 +6,11 @@ function createRandomNumber(low, high)
 function randomNumberGenerator(low, high)
 {
     var self = this;
-    var currentRandomNumberGenerator = createRandomNumber;
+    var currentRandomNumberGenerator =  createPseudoRandomNumber;
     this.next = function()
     {
         return currentRandomNumberGenerator(low,high);
     }
 }
 
-module.exports =  randomNumberGenerator;
+module.exports = randomNumberGenerator;
