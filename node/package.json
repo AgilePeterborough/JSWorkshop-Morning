@@ -24,7 +24,8 @@
     "javascript"
   ],
   "dependencies" : {
-    "express"   :  "*"
+    "express"   :  "*",
+    "socket.io" : "*"
   },
   "license": "MIT",
   "engines": {
