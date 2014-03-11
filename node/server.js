@@ -7,8 +7,10 @@ var express = require("express"),
  path = require('path'),
  io = require('socket.io').listen(server);
 
-var fullPath = path.resolve(__dirname + '/../web/js');
-app.use('/js', express.static(fullPath));
+var fullPath = path.resolve(__dirname + '/../web/');
+app.use('/js', express.static(fullPath + "/js"));
+app.use('/css', express.static(fullPath + "/css"));
+app.use('/bower_components', express.static(fullPath + "/bower_components"));
 
 server.listen("3030");
 
@@ -36,7 +38,7 @@ app.get('/api/:action/:unitOfTime',function(req, res){
 });
 
 app.get('/',function(req, res){
-    var fullPath = path.resolve(__dirname + '/../web/test.html');
+    var fullPath = path.resolve(__dirname + '/../web/index.html');
     res.sendfile(fullPath);
 });
 console.log("listening for connections on 3030");
